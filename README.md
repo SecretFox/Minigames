@@ -9,7 +9,7 @@ Create a new inventory bag and name it either "Gridris" or "Aegis"
 Movement keys + mouse
 
 ### Install
-Extract Minigames-v0.1.0.zip to `Secret World Legends\Data\Gui\Custom\Flash\`
+Download the mod from "Releases" page and Extract Minigames-v0.1.1.zip to `Secret World Legends\Data\Gui\Custom\Flash\`
 
 ### Uninstall  
 Delete `Secret World Legends\Data\Gui\Custom\Flash\Minigames`  
