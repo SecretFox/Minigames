@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?> 
+<Root>
+	<Value name="Minigames" value="true" />
+	<Value name="Minigames_Gridris_width" value="10" />
+	<Value name="Minigames_Gridris_height" value="20" />
+</Root>
