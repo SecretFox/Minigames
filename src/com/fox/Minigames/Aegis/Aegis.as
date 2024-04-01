@@ -92,6 +92,7 @@ class com.fox.Minigames.Aegis.Aegis
 	
 	public var m_Inventory:MovieClip;
 	public var GameClip:MovieClip;
+	public var StaticClip:MovieClip;
 	public var GameGrid:Array;
 	public var index:Number = 0;
 	public var Symbols:Array;
@@ -104,8 +105,12 @@ class com.fox.Minigames.Aegis.Aegis
 		m_Inventory = root;
 		m_Inventory.RedrawGrid();
 		GameClip = m_Inventory.m_WindowMC.createEmptyMovieClip("Aegis", m_Inventory.m_WindowMC.getNextHighestDepth());
+		StaticClip = m_Inventory.m_WindowMC.createEmptyMovieClip("Static", m_Inventory.m_WindowMC.getNextHighestDepth());
+
 		GameClip._x = m_Inventory.m_WindowMC.i_Content._x;
 		GameClip._y = m_Inventory.m_WindowMC.i_Content._y;
+		StaticClip._x = m_Inventory.m_WindowMC.i_Content._x;
+		StaticClip._y = m_Inventory.m_WindowMC.i_Content._y;
 	}
 	
 	public function Start(inventory)
@@ -550,7 +555,7 @@ class com.fox.Minigames.Aegis.Aegis
 	{
 		GameGrid[x][y] = true;
 		var bounds:BlockBounds = Common.GetBlockBounds(m_Inventory, x, y);
-		var BlockClip = GameClip.createEmptyMovieClip(index + "_" + x + y, GameClip.getNextHighestDepth());
+		var BlockClip = StaticClip.createEmptyMovieClip(index + "_" + x + y, StaticClip.getNextHighestDepth());
 		BlockClip.AegisBlock = false;
 		BlockClip.x = x;
 		BlockClip.y = y;
